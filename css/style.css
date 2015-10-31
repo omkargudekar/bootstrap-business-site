@@ -1,35 +1,158 @@
-html,body{height:100%;}
+html, body {
+    height: 100%;
+}
 
 
-
-
+.clear-menu{
+    padding-top: 50px;
+}
 .dropdown-menu {
     background-color: #1a1a1a;
     width: 100%;
-
 }
 
 .dropdown-menu li a {
-
     color: #8c8c8c;
 }
-
 
 .carousel .item {
     width: 100%;
     max-height: 500px;
 }
+
 .carousel .item img {
     width: 100%;
 }
+
 .carousel .carousel-control {
     background: none;
     border: none;
     top: 50%;
 }
+
+
+
+
+
+
+
+.thumbnail {
+    max-height: 230px;
+    overflow: hidden;
+}
+
+.thumbnail img {
+
+    background-size: cover;
+}
+
+.thumbnail img:hover {
+
+    background-size: contain;
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.caption {
+    color: #000;
+}
+
+.float-bottom{
+
+    padding-top: 70%;
+}
+
+
+
+.big-action-button{
+
+    width: 150px;
+    border-radius: 10px;
+    margin: 5px 0px 5px 0px;
+    padding: 15px 3px 15px 3px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .float-bottom {
+        padding-top: 10px;
+    }
+    .big-action-button{
+
+        width: 100%;
+        border-radius: 5px;
+        margin: 5px 0px 5px 0px;
+        padding: 15px 3px 15px 3px;
+    }
+
+}
+
+
 @media (max-width: 767px) {
     .carousel-slide-show {
         margin-left: -20px;
         margin-right: -20px;
     }
+
+
+
+
+}
+
+
+
+
+.bubble{
+
+    text-align: left;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    box-shadow: 0 0 6px #B2B2B2;
+    display: inline-block;
+    padding: 10px 18px;
+    position: relative;
+    vertical-align: top;
+}
+
+.bubble::before {
+
+    background-color: #F2F2F2;
+    content: "\00a0";
+    display: block;
+    height: 16px;
+    position: absolute;
+    top: 11px;
+    transform:             rotate( 29deg ) skew( -35deg );
+    -moz-transform:    rotate( 29deg ) skew( -35deg );
+    -ms-transform:     rotate( 29deg ) skew( -35deg );
+    -o-transform:      rotate( 29deg ) skew( -35deg );
+    -webkit-transform: rotate( 29deg ) skew( -35deg );
+    width:  20px;
+}
+
+.message {
+
+    float: left;
+    margin: 25px 45px 5px 20px;
+}
+
+.message::before {
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+    left: -9px;
+}
+
+.message-from{
+
+    margin-right: 10px;
+    word-wrap: break-word;
+
+}
+
+.message-box{
+    width: 90%;
+    text-align: center;
 }
