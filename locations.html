@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="description" content="CMPE 280 : Bootstrap Website">
+    <meta name="keywords" content="CMPE 280, Bootstrap Website">
+    <meta name="author" content="Omkar Gudekar,Harsh Malewar, Sagar Bendale, Siddharth Warng">
+    <title>CMPE 280 : Bootstrap Website Assignment</title>
+    <!--<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
+    <!--<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmtW1Ig7GhXh-KKY2wW-Eq330Cc4rG-hk&language=eng" type="text/javascript"></script>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">YOUR LOGO</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Products <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Mobile</a></li>
+                            <li><a href="#">Big Data</a></li>
+                            <li><a href="#">IoE/IoT</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">About Us <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Management</a></li>
+                            <li><a href="#">Code Of Conducts</a></li>
+                            <li><a href="#">Business Process</a></li>
+                            <li><a href="#">Locations</a></li>
+                            <li><a href="#">Contacts</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li><a href="pricing.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="clear-menu"></div>
+<section>
+
+
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-xs-12 text-center">
+                        <h1>Locations</h1>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-xs-12">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xs-12">
+                    <span class="address-title">
+                        Centers for Global Software Development & Serswathy Learning Centers ::Fremont
+                    </span>
+                    <span class="address">
+                        628 Crescent Ter,Fremont, CA 94536
+                    </span>
+                </div>
+                <div class="col-sm-12 col-md-12 col-xs-12">
+
+                    <div id="location1" class="map"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-xs-12">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xs-12">
+                    <span class="address-title">
+                        Centers for CTO Office ::Secunderabad
+                    </span>
+                    <span class="address">
+                        1-14/50,Minister Road, Secunderabad,T.S,India
+                    </span>
+                </div>
+                <div class="col-sm-12 col-md-12 col-xs-12">
+
+                    <div id="location2" class="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-xs-12 text-center">
+            twitter news feed
+        </div>
+        <div class="col-sm-12 col-md-12 col-xs-12 text-center">
+            Copyright 636 Technologies Inc, 2015
+        </div>
+
+    </div>
+</footer>
+<script>
+
+    $(window).load(function(){
+        var location1 = new google.maps.Map(document.getElementById('location1'), {
+            center: {lat: 37.567625, lng: -121.975119},
+            zoom: 8
+        });
+
+        var location2 = new google.maps.Map(document.getElementById('location2'), {
+            center: {lat: 17.434254, lng: 78.484569},
+            zoom: 13
+        });
+    });
+
+</script>
+
+
+</body>
+</html>

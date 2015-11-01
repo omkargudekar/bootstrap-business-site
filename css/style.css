@@ -156,3 +156,132 @@ html, body {
     width: 90%;
     text-align: center;
 }
+
+.price-box
+{
+
+    margin: 10px 0 10px 0;
+
+    border-radius: 13px;
+    width: auto;
+}
+
+.price-box span{
+
+        padding: 10px 10px 10px 10px;
+        display: block;
+        text-align: left;
+}
+
+
+.price-box.green{
+
+    background-color: #DFF0D8;
+    color:#3C763D;
+    font-weight: bold;
+    border: solid #397739 1px;
+
+
+}
+
+
+.price-box.red{
+
+    background-color: #F2DEDE;
+    color:#A94442;
+    font-weight: bold;
+    border: solid #A94442 1px;
+
+
+}
+
+
+.price-box-header.green{
+
+    margin: auto;
+    border-bottom: solid #397739 1px;
+}
+
+
+.price-box-header.red{
+
+    margin: auto;
+    border-bottom: solid #A94442 1px;
+}
+
+.price-box-header i{
+
+    padding: 10px 0 10px 0;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.price-box-header span{
+
+    display: block;
+    text-align: center;
+
+}
+
+.price-box-details{
+
+    background-color: #FFFFFF;
+}
+
+.price-box-details span{
+
+    display: block;
+    text-align: center;
+    border-bottom: solid #b1b1b1 1px;
+    color:#777777;
+
+}
+
+
+.price-box-footer{
+
+    background-color: #F0F0F0;
+    border-radius: 13px;
+
+}
+
+.price-box-footer.green span{
+
+    text-align: center;
+    font-size: 1.3em;
+    color:#3C763D;
+
+}
+
+.price-box-footer.red span{
+
+    text-align: center;
+    font-size: 1.3em;
+    color:#A94442;
+
+}
+
+.address-title{
+
+    margin: 10px 10px 10px 10px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+.address{
+
+    margin: 10px 10px 10px 10px;
+    display: block;
+    text-align: center;
+
+
+}
+
+.map {
+    height: 300px;
+    border: solid #1a1a1a 1px;
+    margin: 10px 10px 10px 10px;
+}
+
