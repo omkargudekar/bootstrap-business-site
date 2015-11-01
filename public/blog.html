@@ -20,7 +20,7 @@
 <body>
 
 <header>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -28,7 +28,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">YOUR LOGO</a>
+                <a class="navbar-brand" href="#"><i class="glyphicon glyphicon-tree-conifer"></i> Company.</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -58,9 +58,10 @@
         </div>
     </nav>
 </header>
+    
 <div class="clear-menu"></div>
 <section>
-    <div class="row">
+    <div class="container-fluid blog-container">
         <div class="col-sm-12 col-md-2 col-xs-12">
             <div class="well">
                 <h4>Previous Articles</h4>
@@ -91,21 +92,21 @@
 
         <div class="col-sm-12 col-md-8 col-xs-12">
 
-                <h1>Caching</h1>
+                <h1 class="blog-title">Caching</h1>
 
-                <p class="lead">
-                    by <a href="#">Mr. Wikipedia</a>
+                <p class="lead blog-meta">
+                    by <a href="#">Mr. Wikipedia</a> <i class="fa fa-clock-o"></i> on Oct 30, 2013 at 9:00 PM
                 </p>
 
-                <hr>
+                
 
-                <p><i class="fa fa-clock-o"></i> Posted on Oct 30, 2013 at 9:00 PM</p>
+                
 
 
 
-                <hr>
 
-                <p class="lead text-justify">To be cost-effective and to enable efficient use of data, caches are relatively small. Nevertheless, caches have proven themselves in many areas of computing because access patterns in typical
+
+                <p class="text-justify">To be cost-effective and to enable efficient use of data, caches are relatively small. Nevertheless, caches have proven themselves in many areas of computing because access patterns in typical
                     computer
                     applications exhibit the locality of reference. Moreover, access patterns exhibit temporal locality if data is requested again that has been recently requested already, while spatial locality refers to requests for data
                     physically stored close to data that has been already requested.</p>
@@ -129,20 +130,21 @@
                     and throughputs for both the cache and the backing store. This works well for larger amounts of data, longer latencies and slower throughputs, such as experienced with a hard drive and the Internet, but is not efficient
                     for use with a CPU cache.
                 </p>
-                <hr>
+                
 
         </div>
 
 
         <div class="col-sm-12 col-md-2 col-xs-12">
             <div class="well">
-                <p><b>Related Reports</b></p>
+                <h4>Related Reports</h4>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="text-left">
-                            Caching - Wikileaks (2012)
-                            <br>
-                            <i class="fa fa-file-pdf-o"></i> <a href="#">Download</a>
+                            <p>Caching - Wikileaks (2012)</p>
+                            
+                            <a href="#" target="_blank" title="Download link" class="btn btn-default btn-sm"><i class="fa fa-file-pdf-o"></i>  Download Article</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -171,7 +173,7 @@
                 </div>
             </div>
         </div>
-        <hr>
+        
         <div class="col-sm-12 col-md-12 col-xs-12 text-center copyright-note">
             Copyright © team ui ninjas, 2015
         </div>

@@ -1,7 +1,18 @@
 html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #085DAD;
+    overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5, h6{
+    color: #085DAD;
+}
+
+p{
+    color: #666666
+}
 
 .clear-menu{
     padding-top: 50px;
@@ -17,7 +28,7 @@ html, body {
 
 .carousel .item {
     width: 100%;
-    max-height: 400px;
+    max-height: 470px;
 }
 
 .carousel .item img {
@@ -30,6 +41,26 @@ html, body {
     top: 50%;
 }
 
+.carousel-caption{
+    max-width:300px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(125,125,125,0.7);
+}
+
+.carousel-caption > p{
+    color: white;
+}
+
+.carousel-caption > h4{
+    color: white;
+}
+
+.carousel-indicator{
+    bottom: -7px;
+}
 .clear-footer{
     padding-top: 60px;
 }
@@ -38,22 +69,30 @@ html, body {
 
 .thumbnail{
     border: none;
+    display: inline;
+    border-radius: 0;
 }
 
 .thumbnail-image{
+    max-height: 200px;
+    /*
     height: 170px !important;
     max-width:100% !important;
     display: block;
     border: solid #F0F0F0 1px;
     border-radius: 10px;
+    */
+    
 }
 
 .thumbnail-pic-image{
+    /*
     height: 100px !important;
     max-width:100% !important;
     display: block;
     border: solid #F0F0F0 1px;
     border-radius: 10px;
+    */
 }
 
 
@@ -309,11 +348,16 @@ p.description{
 
 footer{
     width: 100%;
-    position: fixed;
+    margin-top:30px;
+    background-color: #666666;
+    color: #ADB6B5;
+    padding: 20px 0;
+    /* position: fixed;
     bottom: 0;
     background-color: #eee;
     height: 60px;
-    border-top: solid #d7d7d7 1px;
+    */
+    border-top: 8px solid #8CC739;
 
 }
 
@@ -330,3 +374,77 @@ footer{
     font-weight: bold;
 }
 
+
+.navbar{
+    background-color: #085DAD;
+    box-shadow: 0px 2px 6px black;
+}
+
+.navbar-brand, .navbar-nav>li>a{
+    color: white;
+}
+
+.navbar-brand:hover{
+    color: #CCDDDD;
+}
+
+.navbar-toggle > .icon-bar{
+    color: white;
+}
+
+.item{
+    transform-style: 
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    color: #085DAD;
+}
+
+.feature-container{
+    margin: 30px 0;
+}
+
+marquee > p{
+    color: #C0C0C0;
+}
+
+.lead > a{
+    display: inline-block;
+}
+
+.lead{
+    font-size: 1.6rem;
+}
+
+.blog-container{
+    margin: 30px 0;
+}
+
+
+.blog-title {
+    margin-top:0;
+
+}
+
+.blog-meta {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #8CC739;
+    font-size: 1.4rem;
+}
+
+.testimonial {
+    padding: 20px;
+}
+
+.user {
+    line-height: 0.8;
+    margin:0;
+    color: #666666;
+}
+
+.designation {
+    color: #ABB5B4;
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8CC739;
+}
