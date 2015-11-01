@@ -33,32 +33,38 @@ html, body {
 
 
 
-
-
-
-.thumbnail {
-    max-height: 230px;
-    overflow: hidden;
+.thumbnail{
+    border: none;
 }
 
-.thumbnail img {
-
-    background-size: cover;
+.thumbnail-image{
+    height: 200px !important;
+    max-width:100% !important;
+    display: block;
+    border: solid #F0F0F0 1px;
+    border-radius: 10px;
 }
+
+.thumbnail-pic-image{
+    height: 100px !important;
+    max-width:100% !important;
+    display: block;
+    border: solid #F0F0F0 1px;
+    border-radius: 10px;
+}
+
 
 .thumbnail img:hover {
 
-    background-size: contain;
     opacity: 0.4;
     filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
-.caption {
+.thumbnail-caption {
     color: #000;
 }
 
 .float-bottom{
-
     padding-top: 70%;
 }
 
@@ -284,4 +290,65 @@ html, body {
     border: solid #1a1a1a 1px;
     margin: 10px 10px 10px 10px;
 }
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+p.description{
+
+    margin: 10px 10px 10px 10px;
+}
+
+
+
+.article{
+
+    border: solid #1a1a1a 1px;
+    margin: 10px 10px 10px 10px;
+    background:#EEF2F1;
+
+}
+
+.story-title{
+
+    padding: 3px 5px 5px 3px;
+    display: block;
+    background-color: #24373D;
+    color: #F0F0F0;
+    font-weight: bold;
+}
+
+.story-content .title{
+
+        text-align: center;
+        color: #0E4773;
+        display: block;
+}
+.story-content .story{
+
+    word-wrap: break-word;
+    text-align: justify;
+    padding: 3px 7px 3px 7px;
+}
+
+.story-content .read-full-action a{
+    font-weight: bold;
+    color: #71B5A3;
+    padding: 3px 7px 3px 7px;
+
+}
+
+.heading-yellow {
+
+    color: #ffbc6e;
+    display: block;
+}
+
+
+
+
+
 
