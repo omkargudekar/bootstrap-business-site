@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="description" content="CMPE 280 : Bootstrap Website">
+    <meta name="keywords" content="CMPE 280, Bootstrap Website">
+    <meta name="author" content="Omkar Gudekar,Harsh Malewar, Sagar Bendale, Siddharth Warng">
+    <title>CMPE 280 : Bootstrap Website Assignment</title>
+    <!--<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
+    <!--<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">YOUR LOGO</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Products <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Mobile</a></li>
+                            <li><a href="bigdata.html">Big Data</a></li>
+                            <li><a href="iot.html">IoE/IoT</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">About Us <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="management.html">Management</a></li>
+                            <li><a href="#">Code Of Conducts</a></li>
+                            <li><a href="#">Business Process</a></li>
+                            <li><a href="locations.html">Locations</a></li>
+                            <li><a href="#">Contacts</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="clear-menu"></div>
+<section>
+    <div class="row">
+        <div class="col-sm-12 col-md-2 col-xs-12">
+            <div class="well">
+                <h4>Previous Articles</h4>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Database Locks</a>
+                            </li>
+                            <li><a href="#">Cloud Computing</a>
+                            </li>
+                            <li><a href="#">Data Cleaning</a>
+                            </li>
+                            <li><a href="#">Multithreading</a>
+                            </li>
+                            <li><a href="#">Cyber Attacks</a>
+                            </li>
+                            <li><a href="#">Firewalls</a>
+                            </li>
+                            <li><a href="#">Virus Protection</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-8 col-xs-12">
+
+                <h1>Caching</h1>
+
+                <p class="lead">
+                    by <a href="#">Mr. Wikipedia</a>
+                </p>
+
+                <hr>
+
+                <p><i class="fa fa-clock-o"></i> Posted on Oct 30, 2013 at 9:00 PM</p>
+
+
+
+                <hr>
+
+                <p class="lead text-justify">To be cost-effective and to enable efficient use of data, caches are relatively small. Nevertheless, caches have proven themselves in many areas of computing because access patterns in typical
+                    computer
+                    applications exhibit the locality of reference. Moreover, access patterns exhibit temporal locality if data is requested again that has been recently requested already, while spatial locality refers to requests for data
+                    physically stored close to data that has been already requested.</p>
+
+                <p class="text-justify">
+                    Hardware implements cache as a block of memory for temporary storage of data likely to be used again. Central processing units (CPUs) and hard disk drives (HDDs) frequently use a cache, as do web browsers and web
+                    servers.
+
+                    A cache is made up of a pool of entries. Each entry has associated data, which is a copy of the same data in some backing store. Each entry also has a tag, which specifies the identity of the data in the backing store of
+                    which the entry is a copy.
+
+                    When the cache client (a CPU, web browser, operating system) needs to access data presumed to exist in the backing store, it first checks the cache. If an entry can be found with a tag matching that of the desired data,
+                    the data in the entry is used instead. This situation is known as a cache hit. So, for example, a web browser program might check its local cache on disk to see if it has a local copy of the contents of a web page at a
+                    particular URL. In this example, the URL is the tag, and the contents of the web page is the data. The percentage of accesses that result in cache hits is known as the hit rate or hit ratio of the cache.
+
+                    The alternative situation, when the cache is consulted and found not to contain data with the desired tag, has become known as a cache miss. The previously uncached data fetched from the backing store during miss
+                    handling is usually copied into the cache, ready for the next access.
+
+                    During a cache miss, the CPU usually ejects some other entry in order to make room for the previously uncached data. The heuristic used to select the entry to eject is known as the replacement policy. One popular
+                    replacement policy, "least recently used" (LRU), replaces the least recently used entry (see cache algorithm). More efficient caches compute use frequency against the size of the stored contents, as well as the latencies
+                    and throughputs for both the cache and the backing store. This works well for larger amounts of data, longer latencies and slower throughputs, such as experienced with a hard drive and the Internet, but is not efficient
+                    for use with a CPU cache.
+                </p>
+                <hr>
+
+        </div>
+
+
+        <div class="col-sm-12 col-md-2 col-xs-12">
+            <div class="well">
+                <p><b>Related Reports</b></p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-left">
+                            Caching - Wikileaks (2012)
+                            <br>
+                            <i class="fa fa-file-pdf-o"></i> <a href="#">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-xs-12 text-center">
+            twitter news feed
+        </div>
+        <div class="col-sm-12 col-md-12 col-xs-12 text-center">
+            Copyright 636 Technologies Inc, 2015
+        </div>
+
+    </div>
+</footer>
+
+
+</body>
+</html>
