@@ -72,13 +72,32 @@
                     <button type="button" class="btn btn-primary big-action-button">Brochure</button>
                 </div>
                 <div class="col-sm-12 col-md-12 col-xs-12 text-center">
-                    <button type="button" class="btn btn-primary big-action-button">White Paper</button>
+                    <button type="button" class="btn btn-primary big-action-button" data-toggle="modal" data-target="#whitePaperModal">White Paper</button>
                 </div>
             </div>
 
         </div>
         <div class="col-sm-12 col-md-8 col-xs-12">
             <div class="row">
+
+
+                <div class="col-sm-12 col-md-12 col-xs-12 text-center hide" id="successSubmit">
+                    <div class="row">
+                        <div class="alert alert-success fade in">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            <strong>Thank you!</strong> Your details have been saved.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-xs-12 text-center hide" id="failureSubmit">
+                    <div class="row">
+                        <div class="alert alert-danger fade in">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            <strong>Sorry!</strong> Error while saving details.
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col-sm-12 col-md-12 col-xs-12 text-center">
                     <h3> Big Data</h3>
@@ -110,7 +129,9 @@
                         <div class="panel panel-default">
                             <div class="panel-body">
                                 <p class="">what incredible quality and service you guys provide!!!</p>
+
                                 <p class="text-right"><i class="fa fa-user"></i> Bruce Wayne</p>
+
                                 <p class="text-right"> V.P. Yahoo Inc.</p>
 
                             </div>
@@ -119,7 +140,9 @@
                         <div class="panel panel-default">
                             <div class="panel-body">
                                 <p class=""> I have found a home for all my client's printing needs. Thank you</p>
+
                                 <p class="text-right"><i class="fa fa-user"></i> Peter Parker</p>
+
                                 <p class="text-right">E.D. Google</p>
                             </div>
                         </div>
@@ -127,7 +150,9 @@
                         <div class="panel panel-default">
                             <div class="panel-body">
                                 <p class="">Thanks again for such a wonderful job, and for your caring attitude towards your clientele.</p>
+
                                 <p class="text-right"><i class="fa fa-user"></i> Tony Stark</p>
+
                                 <p class="text-right">Dir. Netflix</p>
                             </div>
                         </div>
@@ -149,9 +174,9 @@
         <div class="col-sm-12 col-md-12 col-xs-12 text-center twitter-feed">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-xs-12 text-center twitter-feed">
-                    <marquee scrollamount="11" >
+                    <marquee scrollamount="11">
                         <p>
-                            <i class="fa fa-twitter"></i> Learn how @Deakin used @IBMWatson to create world’s first virtual student advisor http://bit.ly/1MmWVil  #P4SC
+                            <i class="fa fa-twitter"></i> Learn how @Deakin used @IBMWatson to create world’s first virtual student advisor http://bit.ly/1MmWVil #P4SC
                             | <i class="fa fa-twitter"></i> #Didyouknow, routine weather cost businesses $500B in the US in 2014 #IBMweather
                             | <i class="fa fa-twitter"></i> "It's important to push the limits of science." @UMSolarCarTeam's Arnold Kadiu http://bit.ly/1NbOn2R
                             | <i class="fa fa-twitter"></i> How African schools use @komminist's #cognitivecomputing tech to help shape education http://onforb.es/1P7GdIG
@@ -167,5 +192,54 @@
         </div>
     </div>
 </footer>
+
+<section>
+    <div class="modal fade" id="whitePaperModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Download White Paper Modal</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" class="form-control" id="fname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" class="form-control" id="lname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-id">Email</label>
+                        <input type="email" class="form-control" id="email-id" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="submitForm()">Download</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function submitForm() {
+
+        var jqxhr = $.post('submit?' +
+                'fname='+$('#fname').val()+
+                '&lname='+$('#lname').val()+
+                '&email='+$('#email').val()
+                , function ()
+                {
+                    $("#successSubmit").removeClass('hide');
+
+                }).fail(function () {
+                    $("#failureSubmit").removeClass('hide');
+
+                });
+    }
+</script>
 </body>
 </html>
