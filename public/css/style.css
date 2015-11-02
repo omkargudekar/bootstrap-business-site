@@ -72,6 +72,9 @@ p {
     position: absolute;
     bottom: 0px;
 }
+ol.carousel-indicators li:hover{
+ cursor: pointer;
+}
 .clear-footer {
     padding-top: 60px;
 }
@@ -424,3 +427,6 @@ marquee > p {
 
 
 
+.carousel-indicators li{
+    cursor: pointer;
+}
