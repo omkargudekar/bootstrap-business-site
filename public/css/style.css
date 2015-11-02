@@ -49,9 +49,12 @@ p {
 }
 
 .carousel-caption {
-    max-width: 300px;
+    max-height: 180px;
     width: 100%;
-    top: 0;
+    top: 73%;
+    padding: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
     left: 0;
     bottom: 0;
     background: rgba(125, 125, 125, 0.7);
@@ -65,10 +68,10 @@ p {
     color: white;
 }
 
-.carousel-indicator {
-    bottom: -7px;
+.carousel-indicators {
+    position: absolute;
+    bottom: 0px;
 }
-
 .clear-footer {
     padding-top: 60px;
 }
